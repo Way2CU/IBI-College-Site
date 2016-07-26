@@ -1,0 +1,184 @@
+/**
+ * Header Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Iliya Melishev
+ */
+
+header {
+	text-align: center;
+	background-image: url(../images/header-backgrund.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 1920px 700px;
+	height: calc(~'(700px - 10em)');
+	color: white;
+	padding-top: 10em; 
+}
+
+header > div {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+	border-right: 5px solid white;
+	border-left: 5px solid white;
+	border-bottom: 5px solid white;
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+}
+
+header div article {
+	display: block;
+	background-color: fade(black, 50%);
+	padding: 5em;
+}
+
+header div article p,
+header div article h1 {
+	margin: 0;
+}
+
+header div article h1 {
+	font-size: 3em;
+	padding-top: 25px;
+}
+
+header div article p {
+	font-size: 1.3em;
+}
+
+header span.logo {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: -125px;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+header span.logo:before,
+header span.logo:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: calc(~'(100% + 25px)');
+	transform: translatey(-50%);
+	height: 5px;
+	background-color: white;
+	width: 100%;
+}
+
+header span.logo:before{
+	right: calc(~'(100% + 25px)');
+	left: auto;
+}
+
+header span.logo img {
+	
+	display: block;
+}
+
+/*Form section*/
+header div.form_container {
+	border:none;
+	display: block;
+	width: 100%;
+	padding: 50px 0 10px 0;
+}
+header div.form_container h4 {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 10px;
+}
+
+header form fieldset {
+	border:none;
+	padding: 0;
+}
+
+header form fieldset legend {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 1em;
+}
+
+header form label {
+	padding: 0 5px;
+}
+
+header form label span {
+	font-size: 0;
+}
+
+header form label.checkbox input {
+	display: none;
+}
+
+
+header form label.checkbox input:checked + span:after {
+	transform: scale(1);
+}
+
+header form label.checkbox span {
+	font-size: 1.3em;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+
+header form label.checkbox span:before,
+header form label.checkbox span:after {
+	content: "";
+	border: 1px solid grey;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -30px;
+	top: 3px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+header form label.checkbox span:after {
+	background-image: url(../images/check_mark.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	transform: scale(0);
+	transition: all 0.3s;
+}
+
+header form label input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	transition: all 0.3s;
+}
+
+header form label input:focus,
+header form label input:hover {
+	border: 1px solid @color_blue;
+}
+
+header form div.controls {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 35px;
+}
+
+header form div.controls button {
+	padding: 10px;
+	color: white;
+	background-color: @color_blue;
+	border:none;
+	border-radius: 5px;
+	font-size: 1.3em;
+	transition: all 0.3s;
+}
+
+header form div.controls button:hover {
+	background-color: darken(@color_blue, 10%);
+}
