@@ -1,12 +1,23 @@
 /**
  * Main Style Sheet
- * Site Name
+ * IBI site
  *
- * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Iliya Melishev
  */
+
+@import 'common.less';
 
 body {
 	background-color: white;
 	color: black;
+	font-family: 'assistant';
+}
+
+input, 
+select, 
+textarea,
+button  {
+	font-family: 'assistant';
+	font-weight: 400;
 }
