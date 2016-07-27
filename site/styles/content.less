@@ -9,20 +9,26 @@
 section#features {
  	padding: 0 calc(~'(100% - 1200px)' / 2 );
  	background: 
- 	  url(../images/man-cloud.svg),
- 	  url(../images/cloud.svg),
+ 	url(../images/man-cloud.svg),
+ 	url(../images/cloud.svg),
  	url(../images/man-dollar.svg),
  	url(../images/vector-background.svg),
- 	  linear-gradient(180deg, white 200px, @color_aqua 100%);
- 	  background-repeat: no-repeat;
- 	  background-size: 518px 437px,154px 71px,483px 384px,1920px 1154px,100% auto;
- 	  background-position: calc(~'(50% + 300px)')   calc(~'(50% - 280px)') ,
- 	  calc(~'(50% - 600px)') calc(~'(50% - 200px)'), 
- 	  calc(~'(50% - 192px)') 1100px, 
- 	  center bottom,
- 	  center bottom;
- 	  height: 1555px;
- 	  position: relative;
+ 	linear-gradient(180deg, white 200px, @color_aqua 100%);
+ 	background-repeat: no-repeat;
+ 	background-size: 
+ 	518px 437px,
+ 	154px 71px,
+ 	483px 384px,
+ 	1920px 1154px,
+ 	100% auto;
+ 	background-position:
+ 	calc(~'(50% + 300px)')   calc(~'(50% - 280px)') ,
+ 	calc(~'(50% - 600px)') calc(~'(50% - 200px)'), 
+ 	calc(~'(50% - 192px)') 1100px, 
+ 	center bottom,
+ 	center bottom;
+ 	height: 1555px;
+ 	position: relative;
 }
 
 section#features > h2 {
@@ -104,9 +110,35 @@ section#features article.article_instructor p {
 /*Section-Subjects*/
  section#subjects {
  	padding: 0 calc(~'(100% - 1200px)' / 2 );
+ 	background-image: url(../images/subjects.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: 810px 600px;
+ 	background-position: calc(~'(50% - 305px)') bottom;
+ 	min-height: 600px;
  }
 
  section#subjects article {
 	display: block;
  	width: 50%;
  }
+
+section#subjects article h2 {
+  	color: @color_blue_dark;
+  	font-size: 2.5em;
+  }
+
+section#subjects article ol {
+	padding-right: 25px;
+	margin-bottom: 0;
+}
+
+section#subjects article ol li:last-of-type {
+	margin-right: 10px;
+}
+
+section#subjects article ol li  {
+    	font-size: 1.3em;
+    	color: @color_blue_dark;
+    	padding: 3px 0;
+
+}
