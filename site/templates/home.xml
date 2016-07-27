@@ -60,6 +60,25 @@
 					text_id="what_you_get"
 					template="parts/article.xml"
 				/>
+				<cms:module 
+					name="articles"
+					action="show"
+					text_id="article_instructor"
+					template="parts/article.xml"
+				/>
+				<img 
+					src="_BASEURL.'/site/images/reuven.png'"
+					alt="dr_hen_segal"
+					cms:eval="src"
+				/>
+			</section>
+			<section id="subjects">
+				<cms:module 
+					name="articles"
+					action="show"
+					text_id="article_subjects"
+					template="parts/article.xml"
+				/>
 				
 			</section>
 		</body>
