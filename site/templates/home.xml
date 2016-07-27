@@ -9,6 +9,7 @@
 		</head>
 
 		<body>
+			<cms:svg file="site-sprite.svg"/>
 			<header>
 				<div>
 					<span class="logo">
@@ -37,6 +38,30 @@
 					/>	
 				</div>
 			</header>
+			<section id="features">
+					<cms:module
+						name="articles"
+						action="show_group"
+						text_id="features"
+						template="parts/group_title.xml"
+					/>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="parts/features.xml"
+					/>
+				</ul>
+				
+				<cms:module 
+					name="articles"
+					action="show"
+					text_id="what_you_get"
+					template="parts/article.xml"
+				/>
+				
+			</section>
 		</body>
 	</html>
 </document>
