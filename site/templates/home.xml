@@ -68,7 +68,7 @@
 				/>
 				<img 
 					src="_BASEURL.'/site/images/reuven.png'"
-					alt="Reuven-Mizrav"
+					alt="Reuven-Mizravgit "
 					cms:eval="src"
 				/>
 			</section>
@@ -80,6 +80,39 @@
 					template="parts/article.xml"
 				/>
 			</section>
+			<footer>
+				<div>
+					<span class="logo">
+						<img 
+							src="_BASEURL.'/site/images/logo.svg'"
+							alt="ibi"
+							cms:eval="src"
+						/>
+					</span>
+
+					<article>
+						<cms:module 
+							name="articles"
+							action="show"
+							text_id="header_article"
+							template="parts/header_article.xml"
+						/>
+					</article>
+				</div>
+				<div class="form_container">
+					<h4><cms:text constant="title_form"/></h4>
+					<cms:module 
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+					/>	
+				</div>
+				<cms:template file="stock/copyright.xml">
+						<param name="holder" value="copyright_holder"/>
+						<param name="text" value="copyright_text"/>
+						<param name="light" value=""/>
+				</cms:template>
+			</footer>
 		</body>
 	</html>
 </document>
