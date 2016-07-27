@@ -68,7 +68,7 @@
 				/>
 				<img 
 					src="_BASEURL.'/site/images/reuven.png'"
-					alt="dr_hen_segal"
+					alt="Reuven-Mizrav"
 					cms:eval="src"
 				/>
 			</section>
@@ -79,7 +79,6 @@
 					text_id="article_subjects"
 					template="parts/article.xml"
 				/>
-				
 			</section>
 		</body>
 	</html>
