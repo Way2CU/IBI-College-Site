@@ -5,7 +5,7 @@
  * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors:Iliya Melishev
  */
-
+footer,
 header {
 	text-align: center;
 	background-image: url(../images/header-backgrund.jpg);
@@ -17,6 +17,7 @@ header {
 	padding-top: 10em; 
 }
 
+footer > div,
 header > div {
 	display: block;
 	width: 800px;
@@ -28,27 +29,32 @@ header > div {
 	padding: 20px;
 	position: relative;
 }
-
+footer div article,
 header div article {
 	display: block;
 	background-color: fade(black, 50%);
 	padding: 5em;
 }
 
+footer div article p,
+footer div article h1,
 header div article p,
 header div article h1 {
 	margin: 0;
 }
 
+footer div article h1,
 header div article h1 {
 	font-size: 3em;
 	padding-top: 25px;
 }
 
+footer div article p,
 header div article p {
 	font-size: 1.3em;
 }
 
+footer span.logo,
 header span.logo {
 	position: absolute;
 	width: 250px;
@@ -58,6 +64,8 @@ header span.logo {
 	transform: translatex(-50%);
 }
 
+footer span.logo:before,
+footer span.logo:after,
 header span.logo:before,
 header span.logo:after {
 	content: "";
@@ -70,34 +78,40 @@ header span.logo:after {
 	width: 100%;
 }
 
-header span.logo:before{
+footer span.logo:before,
+header span.logo:before {
 	right: calc(~'(100% + 25px)');
 	left: auto;
 }
 
+footer span.logo img,
 header span.logo img {
-	
 	display: block;
 }
 
 /*Form section*/
+
+footer div.form_container,
 header div.form_container {
 	border:none;
 	display: block;
 	width: 100%;
 	padding: 50px 0 10px 0;
 }
+
+footer div.form_container h4,
 header div.form_container h4 {
 	font-size: 1.5em;
 	margin: 0;
 	padding: 10px;
 }
-
+footer form fieldset,
 header form fieldset {
 	border:none;
 	padding: 0;
 }
 
+footer form fieldset legend,
 header form fieldset legend {
 	font-size: 1.5em;
 	font-weight: 700;
@@ -105,23 +119,27 @@ header form fieldset legend {
 	padding: 1em;
 }
 
+footer form label,
 header form label {
 	padding: 0 5px;
 }
 
+footer form label span,
 header form label span {
 	font-size: 0;
 }
 
+footer form label.checkbox input,
 header form label.checkbox input {
 	display: none;
 }
 
-
+footer form label.checkbox input:checked + span:after,
 header form label.checkbox input:checked + span:after {
 	transform: scale(1);
 }
 
+footer form label.checkbox span,
 header form label.checkbox span {
 	font-size: 1.3em;
 	vertical-align: middle;
@@ -129,6 +147,8 @@ header form label.checkbox span {
 	position: relative;
 }
 
+footer form label.checkbox span:before,
+footer form label.checkbox span:after,
 header form label.checkbox span:before,
 header form label.checkbox span:after {
 	content: "";
@@ -142,6 +162,7 @@ header form label.checkbox span:after {
 	border-radius: 5px;
 }
 
+footer form label.checkbox span:after,
 header form label.checkbox span:after {
 	background-image: url(../images/check_mark.svg);
 	background-size: 20px 20px;
@@ -150,6 +171,7 @@ header form label.checkbox span:after {
 	transition: all 0.3s;
 }
 
+footer form label input,
 header form label input {
 	padding: 10px;
 	border-radius: 5px;
@@ -157,11 +179,14 @@ header form label input {
 	transition: all 0.3s;
 }
 
+footer form label input:focus,
+footer form label input:hover,
 header form label input:focus,
 header form label input:hover {
 	border: 1px solid @color_blue;
 }
 
+footer form div.controls,
 header form div.controls {
 	border: none;
 	display: inline-block;
@@ -169,6 +194,7 @@ header form div.controls {
 	padding-right: 35px;
 }
 
+footer form div.controls button,
 header form div.controls button {
 	padding: 10px;
 	color: white;
@@ -179,6 +205,7 @@ header form div.controls button {
 	transition: all 0.3s;
 }
 
+footer form div.controls button:hover,
 header form div.controls button:hover {
 	background-color: darken(@color_blue, 10%);
 }
