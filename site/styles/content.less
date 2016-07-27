@@ -9,22 +9,22 @@
 section#features {
  	padding: 0 calc(~'(100% - 1200px)' / 2 );
  	background: 
- 	url(../images/man-cloud.svg),
- 	url(../images/cloud.svg),
- 	url(../images/man-dollar.svg),
- 	url(../images/vector-background.svg),
- 	linear-gradient(180deg, white 200px, @color_aqua 100%);
+ 	  url(../images/man-cloud.svg),
+ 	  url(../images/cloud.svg),
+ 	  url(../images/man-dollar.svg),
+ 	  url(../images/vector-background.svg),
+ 	  linear-gradient(180deg, white 200px, @color_aqua 100%);
  	background-repeat: no-repeat;
  	background-size: 
- 	518px 437px,
- 	154px 71px,
- 	483px 384px,
- 	1920px 1154px,
- 	100% auto;
+ 	  518px 437px,
+ 	  154px 71px,
+ 	  483px 384px,
+ 	  1920px 1154px,
+ 	  100% auto;
  	background-position:
- 	calc(~'(50% + 300px)')   calc(~'(50% - 280px)') ,
- 	calc(~'(50% - 600px)') calc(~'(50% - 200px)'), 
- 	calc(~'(50% - 192px)') 1100px, 
+ 	  calc(~'(50% + 300px)')   calc(~'(50% - 280px)') ,
+ 	  calc(~'(50% - 600px)') calc(~'(50% - 200px)'), 
+ 	  calc(~'(50% - 192px)') 1100px, 
  	center bottom,
  	center bottom;
  	height: 1555px;
@@ -140,5 +140,33 @@ section#subjects article ol li  {
     	font-size: 1.3em;
     	color: @color_blue_dark;
     	padding: 3px 0;
+}
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	form label input {
+		width:150px;
+	}
+
+	section#features {
+		background-position:
+			calc(~'(50% + 300px)') calc(~'(50% - 280px)'), 
+			calc(~'(50% - 600px)') calc(~'(50% - 200px)'), 
+			calc(~'(50% - 192px)') 1155px, 
+			center bottom, center bottom;
+	}
+
+	section#features ul {
+		padding: 0 40px;
+	}
+
+	section#subjects article {
+		width: 100%;
+	}	
+
+	section#subjects {
+		padding: 0 40px;
+		padding-bottom: 320px;
+		background-size: 650px 481px;
+		background-position: center bottom;
+	}
 }
