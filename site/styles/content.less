@@ -1,0 +1,74 @@
+/**
+ * Content Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Iliya Melishev
+ */
+
+section#features {
+ 	padding: 0 calc(~'(100% - 1200px)' / 2 );
+ 	padding-bottom: 100px;
+ 	background: 
+ 	  url(../images/man-cloud.svg),
+ 	  url(../images/cloud.svg),
+ 	  linear-gradient(180deg, white 200px, @color_aqua 100%);
+ 	  background-repeat: no-repeat;
+ 	  background-size: 518px 437px,154px 71px, 100% auto;
+ 	  background-position: calc(~'(50% + 300px)') bottom, calc(~'(50% - 600px)') calc(~'(100% - 100px)'), center bottom;
+
+}
+
+section#features > h2 {
+	text-align: center;
+	color: @color_blue_dark;
+	font-size: 2.5em;
+}
+
+section#features > ul {
+  	list-style: none;
+  	margin-bottom: 100px;
+}
+
+section#features > ul li {
+   	display: inline-block;
+   	vertical-align: top;
+   	width: 25%;
+}
+
+section#features > ul li svg {
+    	display: block;
+    	width: 100px;
+    	height: 100px;
+    	margin: 0 auto;
+}
+
+section#features > ul li h4 {
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px 0;
+	color: @color_blue_dark;
+	text-align: center; 
+}
+
+section#features article {
+	display: block;
+	padding-right: 50%;
+	
+}
+
+section#features article h2 {
+	color:@color_blue_dark;
+	font-size: 2.5em;
+	margin-bottom: 0;
+}
+
+section#features article ul {
+	padding-right: 25px;
+}
+
+section#features article ul li {
+	padding: 10px 0;
+	font-size: 1.3em;
+}
