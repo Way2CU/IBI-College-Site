@@ -7,7 +7,6 @@
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
-
 		<body>
 			<cms:svg file="site-sprite.svg"/>
 			<header>
@@ -19,7 +18,6 @@
 							cms:eval="src"
 						/>
 					</span>
-
 					<article>
 						<cms:module 
 							name="articles"
@@ -29,7 +27,6 @@
 						/>
 					</article>
 				</div>
-
 				<div class="form_container">
 					<h4><cms:text constant="title_form"/></h4>
 					<cms:module 
@@ -74,7 +71,6 @@
 						cms:eval="src"
 					/>
 				</section>
-
 				<section id="subjects">
 					<cms:module 
 						name="articles"
@@ -101,7 +97,6 @@
 							/>
 						</ul>
 				</section>
-
 				<section id="articles">
 					<cms:module 
 							name="articles"
@@ -120,17 +115,13 @@
 							alt="Reuven-Mizravgit "
 							cms:eval="src"
 						/>
-					
 				</section>
-
-				
 					<cms:module 
 						name="articles"
 						action="show"
 						text_id="article_subjects"
 						template="parts/article.xml"
 					/>
-		
 			</cms:mobile>
 			<footer>
 				<div>
@@ -141,7 +132,6 @@
 							cms:eval="src"
 						/>
 					</span>
-
 					<article>
 						<cms:module 
 							name="articles"
@@ -151,7 +141,6 @@
 						/>
 					</article>
 				</div>
-
 				<div class="form_container">
 					<h4><cms:text constant="title_form"/></h4>
 					<cms:module 
@@ -160,7 +149,6 @@
 						text_id="contact_form"
 					/>	
 				</div>
-
 				<cms:template file="stock/copyright.xml">
 						<param name="holder" value="copyright_holder"/>
 						<param name="text" value="copyright_text"/>
