@@ -1,0 +1,138 @@
+/**
+ * Mobile Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Iliya Melishev
+ */
+
+ header {
+	text-align: center;
+	background-image: url(../images/mobile-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	color: white;
+}
+
+header div {
+	padding: 0 1em;
+}
+
+header div span.logo {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+	padding: 1.3em;
+}
+
+header article {
+	display: block;
+	background-color: fade(black, 50%);
+	padding: 0.5em;
+
+}
+
+header article h1 {
+	margin: 0;
+	font-size: 1.5em;
+}
+
+header article p {
+	display: block;
+	font-size: 1em;
+}
+
+/*Form Section*/
+
+header div.form_container {
+	display: block;
+	background-color: black;
+	display: block;
+}
+
+header div.form_container h4 {
+	font-size: 1.3em;
+	margin: 0;
+	padding: 10px 5px;
+}
+
+header form fieldset {
+	border:none;
+	padding: 0;
+}
+
+header form label {
+	display: block;
+	padding: 5px 5px;
+	border:1px solid black;
+}
+
+header form label input {
+	border:1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+header form label span {
+	font-size: 0;
+}
+
+header form label.checkbox input {
+	display: none;
+}
+
+header form label.checkbox input:checked + span:after {
+	transform: scale(1);
+}
+
+header form label.checkbox span {
+	font-size: 0.8em;
+	display: block;
+	position: relative;
+	padding-left: 1em;
+	text-align: center;
+}
+
+header form label.checkbox span:before,
+header form label.checkbox span:after {
+	content: "";
+	border: 1px solid grey;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+header form label.checkbox span:after {
+	background-image: url(../images/check_mark.svg);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	transform: scale(0);
+	transition: all 0.3s;
+}
+
+header form label input:focus {
+	border: 1px solid @color_blue;
+}
+
+header form div.controls {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+header form div.controls button {
+	padding: 10px;
+	color: white;
+	background-color: @color_blue;
+	border:none;
+	border-radius: 5px;
+	font-size: 1em;
+	transition: all 0.3s;
+}
