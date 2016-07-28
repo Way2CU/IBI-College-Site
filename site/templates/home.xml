@@ -39,53 +39,99 @@
 					/>	
 				</div>
 			</header>
+			<cms:desktop>
+				<section id="features">
+						<cms:module
+							name="articles"
+							action="show_group"
+							text_id="features"
+							template="parts/group_title.xml"
+						/>
+					<ul>
+						<cms:module
+							name="articles"
+							action="show_list"
+							group="features"
+							template="parts/features.xml"
+						/>
+					</ul>
+					
+					<cms:module 
+						name="articles"
+						action="show"
+						text_id="what_you_get"
+						template="parts/article.xml"
+					/>
+					<cms:module 
+						name="articles"
+						action="show"
+						text_id="article_instructor"
+						template="parts/article.xml"
+					/>
+					<img 
+						src="_BASEURL.'/site/images/reuven.png'"
+						alt="Reuven-Mizravgit "
+						cms:eval="src"
+					/>
+				</section>
 
-			<section id="features">
-					<cms:module
+				<section id="subjects">
+					<cms:module 
 						name="articles"
-						action="show_group"
-						text_id="features"
-						template="parts/group_title.xml"
+						action="show"
+						text_id="article_subjects"
+						template="parts/article.xml"
 					/>
-				<ul>
-					<cms:module
-						name="articles"
-						action="show_list"
-						group="features"
-						template="parts/features.xml"
-					/>
-				</ul>
+				</section>
+			</cms:desktop>
+			<cms:mobile>
+				<section id="features">
+							<cms:module
+								name="articles"
+								action="show_group"
+								text_id="features"
+								template="parts/group_title.xml"
+							/>
+						<ul>
+							<cms:module
+								name="articles"
+								action="show_list"
+								group="features"
+								template="parts/features.xml"
+							/>
+						</ul>
+				</section>
+
+				<section id="articles">
+					<cms:module 
+							name="articles"
+							action="show"
+							text_id="what_you_get"
+							template="parts/article.xml"
+						/>
+						<cms:module 
+							name="articles"
+							action="show"
+							text_id="article_instructor"
+							template="parts/article.xml"
+						/>
+						<img 
+							src="_BASEURL.'/site/images/reuven.png'"
+							alt="Reuven-Mizravgit "
+							cms:eval="src"
+						/>
+					
+				</section>
+
 				
-				<cms:module 
-					name="articles"
-					action="show"
-					text_id="what_you_get"
-					template="parts/article.xml"
-				/>
-
-				<cms:module 
-					name="articles"
-					action="show"
-					text_id="article_instructor"
-					template="parts/article.xml"
-				/>
-
-				<img 
-					src="_BASEURL.'/site/images/reuven.png'"
-					alt="Reuven-Mizravgit "
-					cms:eval="src"
-				/>
-			</section>
-
-			<section id="subjects">
-				<cms:module 
-					name="articles"
-					action="show"
-					text_id="article_subjects"
-					template="parts/article.xml"
-				/>
-			</section>
-
+					<cms:module 
+						name="articles"
+						action="show"
+						text_id="article_subjects"
+						template="parts/article.xml"
+					/>
+		
+			</cms:mobile>
 			<footer>
 				<div>
 					<span class="logo">
