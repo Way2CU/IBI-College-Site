@@ -1,11 +1,11 @@
 ---
 site:
-  domain: sample.com
+  domain: college.ibi.co.il
   # subdomain: test
   # alias: domain.com
   root: httpdocs
-  username: sample
-  caracal_branch: master
+  username: ibi
+  caracal_branch: release
   # ip_address: 0.0.0.0
   # owner: Some Person
   # plan: Unlimited
