@@ -39,6 +39,7 @@
 					/>	
 				</div>
 			</header>
+			
 			<cms:desktop>
 				<section id="features">
 						<cms:module
