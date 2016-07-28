@@ -168,32 +168,19 @@ footer form label input,
 header form label input {
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid grey;
+	border: 2px solid grey;
 	transition: all 0.3s;
-	background-color: fade(white, 50%);
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-color: white;
-}
-::-moz-placeholder { /* Firefox 19+ */
-color: white;
-}
-:-ms-input-placeholder { /* IE 10+ */
-color: white;
-}
-:-moz-placeholder { /* Firefox 18- */
-color: white;
+	background-color:white;
 }
 
 footer form label input:hover,
 header form label input:hover {
-	background-color: fade(white, 80%);
+	border: 2px solid @color_blue;
 }
 
 footer form label input:focus,
 header form label input:focus {
-	background-color: white;
-	color: #1E5880;
+	border: 2px solid @color_blue;
 }
 
 footer form div.controls,
