@@ -71,15 +71,18 @@ header form fieldset {
 footer form label,
 header form label {
 	display: block;
-	padding: 5px 5px;
 	border:1px solid black;
+	padding: 5px 0;
 }
 
 footer form label input,
 header form label input {
-	border:1px solid black;
-	padding: 5px;
+	border:2px solid black;
+	padding: 10px;
 	border-radius: 5px;
+	display: inline-block;
+	width: 80%;
+	margin: 0 auto;
 }
 
 footer form label span,
@@ -99,10 +102,11 @@ header form label.checkbox input:checked + span:after {
 
 footer form label.checkbox span,
 header form label.checkbox span {
-	font-size: 0.8em;
+	font-size: 1em;
 	display: block;
+	margin: 0 auto;
+	width: 160px;
 	position: relative;
-	padding-left: 1em;
 	text-align: center;
 }
 
@@ -112,10 +116,11 @@ header form label.checkbox span:before,
 header form label.checkbox span:after {
 	content: "";
 	border: 1px solid grey;
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	left: 60px;
+	left: 0;
+	right: 100%;
 	top: 0px;
 	background-color: white;
 	border-radius: 5px;
@@ -132,7 +137,9 @@ header form label.checkbox span:after {
 
 footer form label input:focus,
 header form label input:focus {
-	border: 1px solid @color_blue;
+	border: 2px solid @color_blue;
+	background-color: lighten(@color_blue_dark, 50%);
+	color: white;
 }
 
 footer form div.controls,
