@@ -1,0 +1,135 @@
+/**
+ * Content_mobile Style Sheet
+ * IBI site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Iliya Melishev
+ */
+
+section#features {
+ 	padding: 0 10px;
+ 	display: block;
+ 	text-align: center;
+}
+
+section#features h2 {
+  	color: @color_blue_dark;
+}
+
+section#features ul {
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+
+section#features ul li {
+	display: block;
+}
+
+section#features ul li svg {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+section#features ul li h4 {
+	color: @color_blue_dark;
+	font-weight: 400;
+}
+
+/*Article Section - backgrounds*/
+
+section#articles {
+	background-image: linear-gradient(180deg, white 40px, @color_aqua 120%);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position:center bottom;
+	position: relative;
+}
+
+section#articles article.what_you_get {
+	padding: 0 10px;
+	padding-top: 20px;
+	padding-bottom: 350px;
+
+	background-image: url(../images/man-cloud.svg),url(../images/graph-background.svg);
+	background-repeat: no-repeat;
+	background-size:  90% 437px,100% auto;
+	background-position: center bottom, center bottom;
+}
+
+
+section#articles article.what_you_get h2 {
+	display: block;
+	color: @color_blue_dark;
+}
+
+section#articles article.what_you_get ul {
+	display: block;
+	padding-right: 20px;
+	color: @color_blue_dark;
+}
+
+section#articles article.what_you_get ul li {
+	padding: 5px 0;
+}
+
+/*Bottom Article*/
+
+section#articles article.article_instructor {
+	background-image: url(../images/man-dollar.svg),
+	linear-gradient(180deg, white 20%, @color_aqua 100%);
+	background-position: 10% calc(~'(50% + 60px )'), center bottom;
+	background-size: 50% auto, 100% auto;
+	background-repeat: no-repeat;
+	padding-bottom: 200px;
+}
+
+section#articles article.article_instructor h2 {
+	margin-top: 0;
+	text-align: center;
+	color: @color_blue_dark;
+}
+
+section#articles article.article_instructor p {
+	text-align: center;
+	color: @color_blue_dark;
+	padding: 0 1.3em;
+}
+
+section#articles img {
+	width: 200px;
+	height: 194px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/*Last Article in section */
+
+article.article_subjects {
+	display: block;
+	padding: 0 15px;
+	color: @color_blue_dark;
+
+	padding-bottom: 225px;
+	background-image: url(../images/subjects.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center bottom;
+}
+
+article.article_subjects h2 {;
+	display: block;
+}
+
+article.article_subjects ol {
+	display: block;
+	margin-top: 0;
+	padding: 0 15px;
+}
+
+article.article_subjects ol li:last-of-type {
+	margin-right: 5px;
+}
