@@ -5,6 +5,126 @@
  * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors:Iliya Melishev
  */
+/*Form section*/
+ div.form_container {
+	border:none;
+	display: block;
+	width: 100%;
+	transition: all 0.3s;
+	padding-bottom: 0;
+	background-color: black;
+	color: white;
+}
+
+/*Form active on scroll*/
+
+ div.form_container.active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	padding: 0px;
+	background-color: fade(black, 80%);
+}
+
+ div.form_container h4 {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+ div.form_container form {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+ form fieldset {
+	border:none;
+	padding: 0;
+}
+
+ form label {
+	padding: 0 5px;
+}
+
+ form label span {
+	font-size: 0;
+}
+
+ form label.checkbox input {
+	display: none;
+}
+
+ form label.checkbox input:checked + span:after {
+	transform: scale(1);
+}
+
+ form label.checkbox span {
+	font-size: 1.3em;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+
+ form label.checkbox span:before,
+ form label.checkbox span:after {
+	content: "";
+	border: 1px solid grey;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: -30px;
+	top: 3px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+ form label.checkbox span:after {
+	background-image: url(../images/check_mark.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	transform: scale(0);
+	transition: all 0.3s;
+}
+
+ form label input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid grey;
+	transition: all 0.3s;
+	background-color:white;
+}
+
+ form label input:hover {
+	border: 2px solid @color_blue;
+}
+
+ form label input:focus {
+	border: 2px solid @color_blue;
+}
+
+ form div.controls {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 35px;
+}
+
+ form div.controls button {
+	padding: 10px;
+	color: white;
+	background-color: @color_blue;
+	border:none;
+	border-radius: 5px;
+	font-size: 1.3em;
+	transition: all 0.3s;
+}
+
+ form div.controls button:hover {
+	background-color: darken(@color_blue, 10%);
+}
 
 section#features {
  	padding: 0 calc(~'(100% - 1200px)' / 2 );
@@ -29,6 +149,7 @@ section#features {
  	center bottom;
  	height: 1555px;
  	position: relative;
+ 	overflow: hidden;
 }
 
 section#features > h2 {
@@ -62,12 +183,25 @@ section#features > ul li h4 {
 	padding: 10px 0;
 	color: @color_blue_dark;
 	text-align: center; 
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+
+section#features > ul li.active h4 {
+	opacity: 1;
 }
 
 section#features article {
 	display: block;
+	padding-right: 45%;
+	opacity: 0;
+	transition: all 0.8s ease;
+	transition-delay: 0.5s;
+}
+
+section#features article.active {
 	padding-right: 50%;
-	
+	opacity: 1;
 }
 
 section#features article h2 {
@@ -120,7 +254,16 @@ section#features article.article_instructor p {
  section#subjects article {
 	display: block;
  	width: 50%;
+ 	opacity: 0;
+ 	transition: all 0.9s ease;
+ 	transition-delay: 0.5s;
+ 	padding-right: 50px;
  }
+
+  section#subjects article.active {
+  	opacity: 1;
+  	padding-right: 0;
+  }
 
 section#subjects article h2 {
   	color: @color_blue_dark;
