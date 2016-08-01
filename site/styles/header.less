@@ -5,6 +5,7 @@
  * Copyright (c) 2016. by Way2CU, http://way2cu.com
  * Authors:Iliya Melishev
  */
+ 
 footer,
 header {
 	text-align: center;
@@ -12,10 +13,11 @@ header {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 1920px 700px;
-	height: calc(~'(700px - 10em)');
+	/*height: calc(~'(700px - 10em)');*/
 	color: white;
-	padding-top: 10em; 
+	padding-top: 163px; 
 	background-color: grey;
+	padding-bottom: 50px;
 }
 
 footer > div,
@@ -46,13 +48,28 @@ header div article h1 {
 
 footer div article h1,
 header div article h1 {
-	font-size: 3em;
+	font-size: 3.3em;
 	padding-top: 25px;
 }
 
 footer div article p,
 header div article p {
+	display: inline-block;
+	vertical-align: top;
 	font-size: 1.3em;
+	border:1px solid white;
+	width: 45%;
+	box-sizing: border-box;
+	padding: 0.3em;
+	margin-left: calc(~'(5% / 4)');
+	margin-right: calc(~'(5% / 4)');
+}
+
+footer div article p strong,
+header div article p strong {
+	display: block;
+	font-weight: 400;
+	padding: 20px 0;
 }
 
 footer span.logo,
@@ -88,121 +105,4 @@ header span.logo:before {
 footer span.logo img,
 header span.logo img {
 	display: block;
-}
-
-/*Form section*/
-
-footer div.form_container,
-header div.form_container {
-	border:none;
-	display: block;
-	width: 100%;
-	padding: 50px 0 10px 0;
-}
-
-footer div.form_container h4,
-header div.form_container h4 {
-	font-size: 1.5em;
-	margin: 0;
-	padding: 10px;
-}
-footer form fieldset,
-header form fieldset {
-	border:none;
-	padding: 0;
-}
-
-footer form label,
-header form label {
-	padding: 0 5px;
-}
-
-footer form label span,
-header form label span {
-	font-size: 0;
-}
-
-footer form label.checkbox input,
-header form label.checkbox input {
-	display: none;
-}
-
-footer form label.checkbox input:checked + span:after,
-header form label.checkbox input:checked + span:after {
-	transform: scale(1);
-}
-
-footer form label.checkbox span,
-header form label.checkbox span {
-	font-size: 1.3em;
-	vertical-align: middle;
-	display: inline-block;
-	position: relative;
-}
-
-footer form label.checkbox span:before,
-footer form label.checkbox span:after,
-header form label.checkbox span:before,
-header form label.checkbox span:after {
-	content: "";
-	border: 1px solid grey;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	left: -30px;
-	top: 3px;
-	background-color: white;
-	border-radius: 5px;
-}
-
-footer form label.checkbox span:after,
-header form label.checkbox span:after {
-	background-image: url(../images/check_mark.svg);
-	background-size: 20px 20px;
-	background-repeat: no-repeat;
-	transform: scale(0);
-	transition: all 0.3s;
-}
-
-footer form label input,
-header form label input {
-	padding: 10px;
-	border-radius: 5px;
-	border: 2px solid grey;
-	transition: all 0.3s;
-	background-color:white;
-}
-
-footer form label input:hover,
-header form label input:hover {
-	border: 2px solid @color_blue;
-}
-
-footer form label input:focus,
-header form label input:focus {
-	border: 2px solid @color_blue;
-}
-
-footer form div.controls,
-header form div.controls {
-	border: none;
-	display: inline-block;
-	vertical-align: middle;
-	padding-right: 35px;
-}
-
-footer form div.controls button,
-header form div.controls button {
-	padding: 10px;
-	color: white;
-	background-color: @color_blue;
-	border:none;
-	border-radius: 5px;
-	font-size: 1.3em;
-	transition: all 0.3s;
-}
-
-footer form div.controls button:hover,
-header form div.controls button:hover {
-	background-color: darken(@color_blue, 10%);
 }
