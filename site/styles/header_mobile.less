@@ -42,12 +42,36 @@ header article h1 {
 	font-size: 1.5em;
 }
 
-footer article p,
-header article p {
+footer article > p,
+header article > p {
 	display: block;
+	margin: 0;
+	font-size: 1.3em;
+	padding: 0px 5px;
+}
+
+footer div article ul,
+header div article ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding-top: 0.5em;
+}
+
+footer div article ul li,
+header div article ul li {
+	display: block;
+	margin-bottom: 0.5em;
 	font-size: 1em;
 	border:1px solid white;
-	padding: 10px 5px;
+	box-sizing: border-box;
+	padding: 0.5em 4em;
+}
+
+footer div article ul li p,
+header div article ul li p {
+	font-size: 1em;
+	margin: 0;
 }
 
 /*Form Section*/
