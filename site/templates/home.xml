@@ -38,7 +38,7 @@
 						action="show"
 						text_id="contact_form"
 					/>	
-				</div>
+				</div>	
 				<section id="features">
 						<cms:module
 							name="articles"
