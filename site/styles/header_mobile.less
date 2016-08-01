@@ -13,7 +13,7 @@ footer,
 	background-position: center top;
 	background-size: 100% auto;
 	color: white;
-	background-color: grey;
+	background-color: black;
 }
 
 footer div,
@@ -46,38 +46,43 @@ footer article p,
 header article p {
 	display: block;
 	font-size: 1em;
+	border:1px solid white;
+	padding: 10px 5px;
 }
 
 /*Form Section*/
 footer div.form_container,
-header div.form_container {
+div.form_container {
 	display: block;
 	background-color: black;
 	display: block;
 }
 
 footer div.form_container h4,
-header div.form_container h4 {
+div.form_container h4 {
 	font-size: 1.3em;
 	margin: 0;
 	padding: 10px 5px;
+	color: white;
+	text-align: center;
 }
 
 footer form fieldset,
-header form fieldset {
+form fieldset {
 	border:none;
 	padding: 0;
 }
 
 footer form label,
-header form label {
+form label {
 	display: block;
 	border:1px solid black;
 	padding: 5px 0;
+	text-align: center;
 }
 
 footer form label input,
-header form label input {
+form label input {
 	border:2px solid black;
 	padding: 10px;
 	border-radius: 5px;
@@ -87,34 +92,40 @@ header form label input {
 }
 
 footer form label span,
-header form label span {
+form label span {
 	font-size: 0;
 }
 
 footer form label.checkbox input,
-header form label.checkbox input {
+form label.checkbox input {
 	display: none;
 }
 
 footer form label.checkbox input:checked + span:after,
-header form label.checkbox input:checked + span:after {
+form label.checkbox input:checked + span:after {
 	transform: scale(1);
 }
 
+form label.checkbox,
+form label.checkbox {
+	padding: 10px 0;
+}
+
 footer form label.checkbox span,
-header form label.checkbox span {
+form label.checkbox span {
 	font-size: 1em;
 	display: block;
 	margin: 0 auto;
 	width: 160px;
 	position: relative;
 	text-align: center;
+	color: white;
 }
 
 footer form label.checkbox span:before,
 footer form label.checkbox span:after,
-header form label.checkbox span:before,
-header form label.checkbox span:after {
+form label.checkbox span:before,
+form label.checkbox span:after {
 	content: "";
 	border: 1px solid grey;
 	width: 20px;
@@ -128,7 +139,7 @@ header form label.checkbox span:after {
 }
 
 footer form label.checkbox span:after,
-header form label.checkbox span:after {
+form label.checkbox span:after {
 	background-image: url(../images/check_mark.svg);
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
@@ -137,15 +148,16 @@ header form label.checkbox span:after {
 }
 
 footer form div.controls,
-header form div.controls {
+form div.controls {
 	border: none;
 	display: block;
 	margin: 0 auto;
 	padding: 10px;
+	text-align: center;
 }
 
 footer form div.controls button,
-header form div.controls button {
+form div.controls button {
 	padding: 10px;
 	color: white;
 	background-color: @color_blue;
