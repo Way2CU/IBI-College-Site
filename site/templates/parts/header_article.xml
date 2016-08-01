@@ -1,4 +1,4 @@
 <document>
 	<h1><cms:var param="title" multilanguage="yes" /></h1>
-	<p><cms:var param="content" multilanguage="yes" /></p>
+	<cms:markdown param="content" multilanguage="yes" />
 </document>
