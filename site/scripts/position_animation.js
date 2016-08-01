@@ -3,8 +3,14 @@ var Site = Site || {};
 
 Site.PositionAnimation = function(elements) {
 	var self = this;
+	var elements = document.querySelectorAll(elements);
+	self.elements = new Array();
 
-	self.elements = Array.from(document.querySelectorAll(elements));
+	for(var i = 0; i < elements.length; i++) {
+		self.elements.push(elements[i]);
+	}
+
+	console.log(self.elements);
 
 	/*
 	 * object initialization 
