@@ -39,7 +39,6 @@ Site.PositionAnimation = function(elements) {
 }
 
 $(function() {
-	Site.scroll_features = new Site.PositionAnimation('section#features ul li');
 	Site.scroll1 = new Site.PositionAnimation('section#features article');
 	Site.scroll2 = new Site.PositionAnimation('section#subjects article');
 });

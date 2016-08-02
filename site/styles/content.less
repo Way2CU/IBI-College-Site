@@ -168,6 +168,12 @@ section#features > ul li {
    	display: inline-block;
    	vertical-align: top;
    	width: 25%;
+   	opacity: 0;
+   	transition: all 0.3s;
+}
+
+section#features > ul li.active {
+	opacity: 1;
 }
 
 section#features > ul li svg {
@@ -193,16 +199,17 @@ section#features > ul li.active h4 {
 	opacity: 1;
 }
 
-section#features article {
+section#features article.what_you_get {
 	display: block;
-	padding-right: 45%;
+	padding-right: 50%;
+	transform:translatex(-50%);
 	opacity: 0;
-	transition: all 0.8s ease;
-	transition-delay: 1s;
+	transition: all 0.5s ease-out;
+	transition-delay: 0.8s;
 }
 
-section#features article.active {
-	padding-right: 50%;
+section#features article.what_you_get.active {
+	transform:translatex(0);
 	opacity: 1;
 }
 
@@ -236,7 +243,15 @@ section#features article.article_instructor {
 	padding: 0;
 	text-align: center;
 	margin-top: 280px;
-	transition-delay: 1.5s;
+	transition: all 0.3s ease-in;
+	opacity: 0;
+	transition-delay: 1s;
+	transform:translatey(100%);
+}
+
+section#features article.article_instructor.active {
+	opacity: 1;
+	transform:translatex(0);
 }
 
 section#features article.article_instructor p {
@@ -244,7 +259,7 @@ section#features article.article_instructor p {
 	color: @color_blue_dark;
 }
 
-/*Section-Subjects*/
+/*Last-Article*/
  section#subjects {
  	padding: 0 calc(~'(100% - 1200px)' / 2 );
  	background-image: url(../images/subjects.jpg);
