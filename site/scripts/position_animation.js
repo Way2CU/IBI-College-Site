@@ -25,7 +25,7 @@ Site.PositionAnimation = function(elements) {
 		var to_show = new Array();
 
 		self.elements.forEach(function(element) {
-			if (window.pageYOffset >= element.offsetTop - element.clientHeight) 
+			if (window.pageYOffset >= (element.offsetTop - (element.clientHeight / 2))) 
 				element.classList.add('active'); else
 				to_show.push(element);
 		});
@@ -40,6 +40,7 @@ Site.PositionAnimation = function(elements) {
 
 $(function() {
 	Site.scroll_features = new Site.PositionAnimation('section#features ul li');
-	Site.scroll1 = new Site.PositionAnimation('section#features article');
-	Site.scroll2 = new Site.PositionAnimation('section#subjects article');
+	Site.scroll1 = new Site.PositionAnimation('article.what_you_get');
+	Site.scroll2 = new Site.PositionAnimation('article.article_instructor');
+	Site.scroll3 = new Site.PositionAnimation('section#subjects article');
 });
