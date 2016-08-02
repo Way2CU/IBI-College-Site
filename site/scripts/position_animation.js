@@ -25,7 +25,7 @@ Site.PositionAnimation = function(elements) {
 		var to_show = new Array();
 
 		self.elements.forEach(function(element) {
-			if (window.pageYOffset >= element.offsetTop - element.clientHeight) 
+			if (window.pageYOffset >= (element.offsetTop - (element.clientHeight / 2))) 
 				element.classList.add('active'); else
 				to_show.push(element);
 		});
