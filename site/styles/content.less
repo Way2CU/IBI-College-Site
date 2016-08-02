@@ -166,18 +166,21 @@ section#features > h2 {
 section#features > ul {
   	list-style: none;
   	margin-bottom: 100px;
+  	overflow: hidden;
 }
 
 section#features > ul li {
    	display: inline-block;
    	vertical-align: top;
+   	transform: translatey(-50%);
    	width: 25%;
    	opacity: 0;
-   	transition: all 0.3s;
+   	transition: all 0.5s;
 }
 
 section#features > ul li.active {
 	opacity: 1;
+	transform: translatey(0%);
 }
 
 section#features > ul li svg {
@@ -202,7 +205,7 @@ section#features article.what_you_get {
 	transform:translatex(-50%);
 	opacity: 0;
 	transition: all 0.5s ease-out;
-	transition-delay: 0.8s;
+	transition-delay: 1.5s;
 }
 
 section#features article.what_you_get.active {
