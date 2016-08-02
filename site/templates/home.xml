@@ -30,6 +30,7 @@
 						/>
 					</article>
 				</div>
+				<span class="arrow"></span>
 			</header>
 			<cms:desktop>
 				<div class="form_container">
