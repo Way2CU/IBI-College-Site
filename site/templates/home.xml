@@ -15,14 +15,14 @@
 			<header>
 				<div>
 					<span class="logo">
-						<img 
+						<img
 							src="_BASEURL.'/site/images/logo.svg'"
 							alt="ibi"
 							cms:eval="src"
 						/>
 					</span>
 					<article>
-						<cms:module 
+						<cms:module
 							name="articles"
 							action="show"
 							text_id="header_article"
@@ -35,12 +35,12 @@
 			<cms:desktop>
 				<div class="form_container">
 					<h4><cms:text constant="title_form"/></h4>
-					<cms:module 
+					<cms:module
 						name="contact_form"
 						action="show"
 						text_id="contact_form"
-					/>	
-				</div>	
+					/>
+				</div>
 				<section id="features">
 						<cms:module
 							name="articles"
@@ -56,27 +56,22 @@
 							template="parts/features.xml"
 						/>
 					</ul>
-					
-					<cms:module 
+
+					<cms:module
 						name="articles"
 						action="show"
 						text_id="what_you_get"
 						template="parts/article.xml"
 					/>
-					<cms:module 
+					<cms:module
 						name="articles"
 						action="show"
 						text_id="article_instructor"
 						template="parts/article.xml"
 					/>
-					<img 
-						src="_BASEURL.'/site/images/reuven.png'"
-						alt="Reuven-Mizravgit "
-						cms:eval="src"
-					/>
 				</section>
 				<section id="subjects">
-					<cms:module 
+					<cms:module
 						name="articles"
 						action="show"
 						text_id="article_subjects"
@@ -87,11 +82,11 @@
 			<cms:mobile>
 				<div class="form_container">
 					<h4><cms:text constant="title_form"/></h4>
-					<cms:module 
+					<cms:module
 						name="contact_form"
 						action="show"
 						text_id="contact_form"
-					/>	
+					/>
 				</div>
 				<section id="features">
 							<cms:module
@@ -110,25 +105,20 @@
 						</ul>
 				</section>
 				<section id="articles">
-					<cms:module 
+					<cms:module
 							name="articles"
 							action="show"
 							text_id="what_you_get"
 							template="parts/article.xml"
 						/>
-						<cms:module 
+						<cms:module
 							name="articles"
 							action="show"
 							text_id="article_instructor"
 							template="parts/article.xml"
 						/>
-						<img 
-							src="_BASEURL.'/site/images/reuven.png'"
-							alt="Reuven-Mizravgit "
-							cms:eval="src"
-						/>
 				</section>
-					<cms:module 
+					<cms:module
 						name="articles"
 						action="show"
 						text_id="article_subjects"
@@ -138,14 +128,14 @@
 			<footer>
 				<div>
 					<span class="logo">
-						<img 
+						<img
 							src="_BASEURL.'/site/images/logo.svg'"
 							alt="ibi"
 							cms:eval="src"
 						/>
 					</span>
 					<article>
-						<cms:module 
+						<cms:module
 							name="articles"
 							action="show"
 							text_id="header_article"
@@ -156,11 +146,11 @@
 				<cms:mobile>
 					<div class="form_container">
 						<h4><cms:text constant="title_form"/></h4>
-						<cms:module 
+						<cms:module
 							name="contact_form"
 							action="show"
 							text_id="contact_form"
-						/>	
+						/>
 					</div>
 				</cms:mobile>
 				<cms:template file="stock/copyright.xml">
